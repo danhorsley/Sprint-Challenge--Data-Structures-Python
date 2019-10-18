@@ -18,8 +18,13 @@ for item in f.read().split("\n"):
 f.close()
 
 duplicates = []
-## The run time complexity of this code goes up by multiplying the length of each list, n*m, in this case 
-## it is 10,000 * 10,000
+
+#Commentary on run time
+## The run time complexity of this original code (bubble search) goes up by multiplying the length of each list, n*n, in this case 
+## it is 10,000 * 10,000 or O(n^2) in the notation.  with a binary search tree one can achieve run time 
+## run time complexity of O(log n)
+
+
 # for name_1 in names_1:
 #     for name_2 in names_2:
 #         if name_1 == name_2:
